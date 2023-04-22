@@ -23,13 +23,12 @@ typedef struct binary_tree_s
 /* Function to print a binary tree */
 void binary_tree_print(const binary_tree_t *);
 
-/* Function to create a binary tree node */
+/* Node creation and manipulation functions */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-
-/* Function to insert a node as the left-child of another node */
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
-
-/* Function to insert a node as the right-child of another node */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+
+/* Tree deletion function */
+void binary_tree_delete(binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
