@@ -43,5 +43,7 @@ void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 
 /* Tree height measurement function */
 size_t binary_tree_height(const binary_tree_t *tree);
+size_t binary_tree_depth(const binary_tree_t *tree);
+
 
 #endif /* _BINARY_TREES_H_ */
